@@ -1,0 +1,110 @@
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./media/image/Untitled-2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.head {
+    border: 5px solid rgba(135, 30, 233, 0.712);
+    height: auto;
+    width: 50%;
+    float: right;
+    position: relative;
+    z-index: 999;
+    animation-name: dove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dove {
+    0% {
+        top: 220px;
+        right: 110px;
+    }
+
+    50% {
+        top: 250px;
+        right: 110px;
+    }
+
+    100% {
+        top: 220px;
+        right: 110px;
+    }
+
+}
+
+.head h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-left: 120px;
+    text-decoration: underline;
+    color: rgb(160, 149, 223);
+}
+
+.head h3 {
+    font-size: 22px;
+    padding-left: 33px;
+    margin-top: 12px;
+    color: rgba(126, 106, 155, 0.808);
+    color: bisque;
+}
+
+.head p {
+    padding: 4px 33px;
+    font-size: 19px;
+    color: rgb(248, 233, 233);
+}
+
+.wel {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3rem;
+    color: bisque;
+}
+
+
+@media(max-width:1070px) {
+
+    .head h1 {
+        font-size: 2.3rem;
+    }
+
+    .head h3 {
+        font-size: 2rem;
+    }
+
+    .wel {
+        font-size: 2rem;
+    }
+
+}
+
+@media(max-width:800px) {
+    .head {
+
+        width: 80%;
+        margin: auto;
+    }
+
+    .head h1 {
+        font-size: 1.7rem;
+
+    }
+
+    .head h3 {
+        font-size: 1.7rem;
+        padding-left: 30px;
+    }
+
+    .wel {
+        padding-left: 30px;
+    }
+}
