@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from 'react';
 import logo from './media/image/logo.png';
 
-import './Nav.css';
+import '../components/css/Nav.css'
 export default function Nav() {
   const [userMenuActive, setUserMenuActive] = useState(false);
   const [nav, setNav] = useState("50px");
